@@ -2,6 +2,7 @@
 
 // const tokenAddress = '0x345ca3e014aaf5dca488057592ee47305d9b3e10' // insert deployed EIP20 token address here
 // const eip20 = new web3.eth.Contract(EIP20.abi, tokenAddress)
+require('dotenv').config()
 import SimpleStorage from '../../build/contracts/SimpleStorage'
 import Web3 from 'web3'
 
@@ -73,6 +74,5 @@ export const actions = {
 export const getters = {}
 
 function registerSimpleStorage() {
-  const contractAddress = '0x9ed15068A9600c364739B6352e334f51b822871a'
-  simpleStorage = new web3.eth.Contract(SimpleStorage.abi, contractAddress)
+  simpleStorage = new web3.eth.Contract(SimpleStorage.abi, process.env.SIMPLE_STORAGE_CONTRACT_ADDRESS)
 }
