@@ -18,6 +18,7 @@ module.exports = {
       { rel: 'shortcut icon', href: 'https://cryptonaute.fr/wp-content/uploads/2020/06/ethereum-logo.png' }
     ]
   },
+  target: 'static',
   components: true,
   /*
   ** Customize the progress bar color
