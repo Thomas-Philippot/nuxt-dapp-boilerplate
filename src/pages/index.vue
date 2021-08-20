@@ -47,7 +47,6 @@ export default {
   created() {
     let interval = setInterval(() => {
       this.$store.dispatch('eth/simpleStorageGet').then((data) => {
-        console.log(data)
         this.simpleStorage = data
       })
     }, 100);
