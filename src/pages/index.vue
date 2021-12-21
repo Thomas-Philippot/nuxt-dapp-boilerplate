@@ -1,17 +1,16 @@
 <template>
-  <div>
+	<div>
     <h1>Hello world!</h1>
+    <nuxt-link v-if="$store.state.eth.connected" to="/TodoList">Todo</nuxt-link>
   </div>
 </template>
 
 <script>
-import Web3 from 'web3'
 import walletMixins from '../mixins/walletMixins'
 
 export default {
-  name: 'Index',
-  mixins: [walletMixins],
-  created() {
-  }
+	name: 'Index',
+	mixins: [walletMixins],
+	created() {}
 }
 </script>

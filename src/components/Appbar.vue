@@ -3,6 +3,7 @@
       app
   >
     <v-toolbar-title>My Dapp</v-toolbar-title>
+    <nuxt-link to="/">App</nuxt-link>
     <v-spacer />
     <v-btn v-if="!connected" rounded outlined @click="connect">
       Connect
