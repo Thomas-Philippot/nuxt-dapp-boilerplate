@@ -1,10 +1,10 @@
-const ConvertLib = artifacts.require('ConvertLib')
-const MetaCoin = artifacts.require('MetaCoin')
-const Todo = artifacts.require('TodoList')
+const ConvertLib = artifacts.require("ConvertLib");
+const MetaCoin = artifacts.require("MetaCoin");
+const SimpleStorage = artifacts.require("SimpleStorage");
 
 module.exports = function(deployer) {
-	deployer.deploy(ConvertLib)
-	deployer.link(ConvertLib, MetaCoin)
-	deployer.deploy(MetaCoin)
-	deployer.deploy(Todo)
-}
+  deployer.deploy(ConvertLib);
+  deployer.link(ConvertLib, MetaCoin);
+  deployer.deploy(MetaCoin);
+  deployer.deploy(SimpleStorage);
+};

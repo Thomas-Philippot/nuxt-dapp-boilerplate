@@ -23,7 +23,7 @@ export const mutations = {
 }
 
 export const actions = {
-  async connect({commit}) {
+  async connect ({ commit }) {
     if (process.browser) {
       if (window.ethereum) {
         // Use Mist/MetaMask's provider
@@ -45,7 +45,7 @@ export const actions = {
             commit('setConnected', false)
           }
           commit('setAccount', accounts[0])
-          web3.eth.getBalance(accounts[0]).then(balance => {
+          web3.eth.getBalance(accounts[0]).then((balance) => {
             commit('setEthBalance', balance)
           })
         })
