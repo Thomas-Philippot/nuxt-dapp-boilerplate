@@ -46,11 +46,13 @@ export default {
   },
   methods: {
     async setTask () {
-      const taskCount = await this.todoList.taskCount().call()
-      console.log(this.todoList)
-      for (let i = 0; i < taskCount; i++) {
-        let task = await this.todoList.tasks(i).call()
-        this.tasks.push(task)
+      if (this.$store.state.eth.connected) {
+        const taskCount = await this.todoList.taskCount().call()
+        console.log(this.todoList)
+        for (let i = 0; i < taskCount; i++) {
+          let task = await this.todoList.tasks(i).call()
+          this.tasks.push(task)
+        }
       }
     },
     async addTask () {

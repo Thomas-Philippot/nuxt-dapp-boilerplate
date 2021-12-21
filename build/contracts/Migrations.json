@@ -59,7 +59,7 @@
   "sourceMap": "66:311:2:-;;;218:50;8:9:-1;5:2;;;30:1;27;20:12;5:2;218:50:2;253:10;245:5;;:18;;;;;;;;;;;;;;;;;;66:311;;;;;;",
   "deployedSourceMap": "66:311:2:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;66:311:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;114:36;;;:::i;:::-;;;;;;;;;;;;;;;;;;;90:20;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;272:103;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;272:103:2;;;;;;;;;;;;;;;;;:::i;:::-;;114:36;;;;:::o;90:20::-;;;;;;;;;;;;;:::o;272:103::-;201:5;;;;;;;;;;;187:19;;:10;:19;;;183:26;;;361:9;334:24;:36;;;;183:26;272:103;:::o",
   "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.25 <0.7.0;\n\ncontract Migrations {\n  address public owner;\n  uint public last_completed_migration;\n\n  modifier restricted() {\n    if (msg.sender == owner) _;\n  }\n\n  constructor() public {\n    owner = msg.sender;\n  }\n\n  function setCompleted(uint completed) public restricted {\n    last_completed_migration = completed;\n  }\n}\n",
-  "sourcePath": "/home/thomas/workspace/my-dapp/contracts/Migrations.sol",
+  "sourcePath": "/home/thomas/workspace/nuxt-dapp-boilerplate/contracts/Migrations.sol",
   "ast": {
     "absolutePath": "project:/contracts/Migrations.sol",
     "exportedSymbols": {
@@ -176,7 +176,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 164,
+                        "referencedDeclaration": 248,
                         "src": "187:3:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -280,7 +280,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 164,
+                        "referencedDeclaration": 248,
                         "src": "253:3:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -626,7 +626,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 164,
+                                  "referencedDeclaration": 248,
                                   "type": "msg",
                                   "value": "msg"
                                 },
@@ -763,7 +763,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 164,
+                                  "referencedDeclaration": 248,
                                   "type": "msg",
                                   "value": "msg"
                                 },
@@ -964,12 +964,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x136bc1d5b071697744C20B728539a15509B4ABcB",
-      "transactionHash": "0x8724e159fcb9f2bac5da74eec9e76eb3035641f506d33906f8258d1faa18afc8"
+      "address": "0x15E37dFd9D52Ef0fe41Bec53E0482a3A1ec8Ce25",
+      "transactionHash": "0xc78e22886d6ffa56d8f6e79cd7ab1dd766ccb6a71732d61cb900cd41d9cf6112"
     }
   },
-  "schemaVersion": "3.4.3",
-  "updatedAt": "2021-08-20T17:41:02.571Z",
+  "schemaVersion": "3.4.4",
+  "updatedAt": "2021-12-21T18:44:50.311Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}

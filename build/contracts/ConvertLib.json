@@ -34,7 +34,7 @@
   "sourceMap": "66:155:0:-;;132:2:-1;166:7;155:9;146:7;137:37;255:7;249:14;246:1;241:23;235:4;232:33;222:2;;269:9;222:2;293:9;290:1;283:20;323:4;314:7;306:22;347:7;338;331:24",
   "deployedSourceMap": "66:155:0:-;;;;;;;;;;;;;;;;;;;;;;;;87:132;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;87:132:0;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;158:20;201:14;192:6;:23;185:30;;87:132;;;;:::o",
   "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.25 <0.7.0;\n\nlibrary ConvertLib{\n\tfunction convert(uint amount,uint conversionRate) public pure returns (uint convertedAmount)\n\t{\n\t\treturn amount * conversionRate;\n\t}\n}\n",
-  "sourcePath": "/home/thomas/workspace/my-dapp/contracts/ConvertLib.sol",
+  "sourcePath": "/home/thomas/workspace/nuxt-dapp-boilerplate/contracts/ConvertLib.sol",
   "ast": {
     "absolutePath": "project:/contracts/ConvertLib.sol",
     "exportedSymbols": {
@@ -483,12 +483,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x449cf6809B86e33ac19ea5995c081EbA03a65Ac4",
-      "transactionHash": "0x013aa41a897a16101d581d5d4bf3954127d82f39b064d694da25f4158136a374"
+      "address": "0x5b90Ee0C4D734Cd00BA07a4c6307a7D28ed2E490",
+      "transactionHash": "0x35e6b7a61b646798eeabcb0bb247d4e65677f150c2e28a289b7cf331dbc526d3"
     }
   },
-  "schemaVersion": "3.4.3",
-  "updatedAt": "2021-08-19T20:51:22.429Z",
+  "schemaVersion": "3.4.4",
+  "updatedAt": "2021-12-21T18:44:50.308Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}

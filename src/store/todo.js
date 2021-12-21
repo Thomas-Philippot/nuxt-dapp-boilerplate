@@ -3,7 +3,7 @@ import Web3 from 'web3'
 
 export const state = () => ({
   abi: TodoList,
-  address: '0x461cF04b67bFC584E4CA633304Eb1eB99453FB4A',
+  address: '0xcF955A4B7cfFb7B0fb9a01AB54c8404817f87515',
   contract: ''
 })
 
